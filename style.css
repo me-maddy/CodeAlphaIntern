@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #44555bd4;
+  background-color: rgba(49, 90, 124, 0.692);
+  display: flex;
+  position: relative;
+}
+
+#part1 {
+  width: 26%;
+  height: 100%;
+}
+
+#part2 {
+  width: 67%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(61, 47, 45, 0.65); */
+  background-color: rgba(54, 24, 19, 0.6);
+  /* background-color: rgba(77, 46, 44, 0.7); */
+}
+
+#part3 {
+  width: 7%;
+  height: 100%;
+}
+
+#text-content {
+  width: fit-content;
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#text-content h1 {
+  font-size: 80px;
+  font-weight: 900;
+  font-family: mountain;
+  color: #fff;
+  letter-spacing: 10px;
+  line-height: 78px;
+  text-transform: uppercase;
+}
+
+#mini-image {
+  height: 400px;
+  width: 300px;
+  background-image: url(https://images.unsplash.com/photo-1551024739-78e9d60c45ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.overlay1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 41, 39, 0.3);
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 3.5%;
+  left: 8%;
+  width: 300px;
+}
+
+#nav p {
+  word-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "mountain";
+  font-weight: 500;
+  color: #fff;
+}
+
+#nav img {
+  width: 60px;
+}
+
+#vertical-text {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 45%;
+  right: -20%;
+}
+
+#vertical-text > h5 {
+  letter-spacing: 6px;
+  font-size: 55px;
+  color: transparent;
+  /* font-weight: 100; */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #c2c2c2;
+  text-transform: uppercase;
+  font-family: "Girgoy";
+}
