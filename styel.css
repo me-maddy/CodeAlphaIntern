@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem 0 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+}
+
+.textBox {
+  min-width: 200px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red */
+  margin: 0 auto;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+.textBox input[type="text"] {
+  padding: 0.8rem 0.3rem 0.8rem 0.4rem;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.textBox input[type="submit"] {
+  padding: 0.4rem;
+  cursor: pointer;
+  min-width: 80px;
+  width: 100px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px 8px;
+  font-size: 16px;
+  background-color: blue;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.textInp:valid ~ .submitBtn {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.textBox input[type="submit"]:hover {
+  box-shadow: 0 3px 4px rgb(2, 138, 138);
+  background-color: #fff;
+  color: blue;
+  border-radius: 8px 5px;
+}
+
+::placeholder {
+  color: rgb(151, 151, 151);
+}
+
+.taskBox {
+  background-color: rgb(231, 231, 231);
+  min-width: 200px;
+  width: 80vw;
+  margin: 2.5rem auto 0;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.taskBox .taskHeading {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 2.2rem;
+}
+
+.taskBox .item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.taskBox .item p,
+.btn {
+  padding: 0.4rem;
+  font-size: 15px;
+}
+
+.taskBox .item p {
+  width: 81%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding-left: 0.8rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  height: 30px;
+}
+
+.btnBox {
+  width: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 6px rgb(99, 96, 96);
+  background-color: #fff;
+}
+
+.doneBtn {
+  background-color: blue;
+}
+
+.dltBtn {
+  background-color: red;
+}
+
+.editBtn {
+  background-color: green;
+}
+
+.doneBtn:hover {
+  color: blue;
+}
+
+.editBtn:hover {
+  color: green;
+}
+
+.dltBtn:hover {
+  color: red;
+}
+
+.data-hide {
+  display: none;
+}
+
+/* Responsive design---> */
+@media screen and (min-width: 1875px) {
+  .btnBox {
+    width: 12%;
+  }
+  .taskBox {
+    width: 90vw;
+  }
+  .taskBox .item p {
+    width: 83%;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .btnBox {
+    width: 10%;
+  }
+  .taskBox .item p {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1875px) {
+  .btnBox {
+    width: 16%;
+  }
+  .taskBox .item p {
+    width: 79%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .btnBox {
+    width: 18%;
+  }
+  .taskBox .item p {
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .btnBox {
+    width: 21%;
+  }
+  .taskBox .item p {
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .btnBox {
+    width: 24%;
+  }
+  .taskBox .item p {
+    width: 72%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .btnBox {
+    width: 28%;
+  }
+  .taskBox .item p {
+    width: 67%;
+  }
+
+  .textBox {
+    width: 575px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .btnBox {
+    width: 34%;
+  }
+  .taskBox .item p {
+    width: 61%;
+  }
+  .textBox {
+    width: 480px;
+  }
+
+  .taskBox {
+    padding: 1.2rem 1rem;
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .btnBox {
+    width: 35%;
+  }
+  .taskBox .item p {
+    width: 61%;
+  }
+  .textBox {
+    width: 420px;
+  }
+
+  .taskBox {
+    padding: 1.2rem 0.7rem;
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .taskBox .item p,
+  .btnBox {
+    width: 100%;
+  }
+  .textBox {
+    width: 250px;
+  }
+
+  .taskBox {
+    width: 92vw;
+    padding: 1.5rem 1.2rem 0.5rem 1.2rem;
+  }
+
+  .taskBox .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .textBox {
+    width: 210px;
+  }
+  .taskBox {
+    width: 90vw;
+    padding: 1.5rem 0.8rem 0.5rem 1rem;
+    margin: 0 auto;
+  }
+}
