@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: antiquewhite;
+    /* position: relative; */
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* position: relative; */
+}
+/* 
+nav::after{
+    content: "";
+    background: url('bg.jpg') no-repeat fixed;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    opacity: 0.9;
+} */
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.list-container{
+    display: flex;
+    width: 80%;
+}
+
+.list-container li{
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.brand img{
+    width: 35px;
+    padding: 0 5px;
+}
+
+.container{
+    min-height: 72vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    width: 80vw;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 30px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songPlayingBox{
+    min-height: 100px;
+    max-height: 28vh;
+    padding: 0.9rem 0;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.leftBox h2{
+    margin-bottom: 30px;
+}
+
+.songList{
+    padding: 2px;
+    height: 40px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38vw;
+    background-color: white;
+    color: black;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.songList img{
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.songList i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    top: 2.5rem;
+}
+
+.songInfo img{
+    width: 42px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.timeInfo{
+    position: absolute;
+    right: 10vw;
+    top: 2.5rem;
+}
